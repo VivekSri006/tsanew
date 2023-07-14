@@ -1,0 +1,224 @@
+<section>
+    <app-sidenav></app-sidenav>
+    <app-header></app-header>
+    <div class="commonContent">
+        <h2 class="main">Location Management
+        </h2>
+        <div class="whiteBox">
+           
+            <form action="">
+                <div class="filterFlex2">
+                    <div class="filterFlex ">
+                        <div class="form-group ">
+                            <label for="" class="label">Search</label>
+                            <input type="text" placeholder="User Id" class="form-control formControl">
+                         </div>
+                         <div class="applyBtn ">
+                            <a href="javascript:void(0)" class="btns">Search</a>                          
+                        </div>                       
+                    </div>
+                    <div class="applyBtn Addbtn">
+                   <label>&nbsp;</label>
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#OfferAddModal" class="btns">+ Add </a>
+                    </div>
+                </div>
+               
+               
+            </form>
+            <!-- <div class="filterFlex2">
+                <ul>
+                    <li>
+                        <input type="radio" name="date">
+                        <label for="">Today</label>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="whiteBox">
+            <div class="tableList">
+                <div class="table-responsive scrollbar2" id="style-4">
+                    <table class="table force-overflow2" style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th> Location Id</th>
+                                <th>Location</th>
+                                <th>Uploaded Date & Time</th>
+                                <th>Employees</th>
+                                <th>Total Orders</th>
+                                <th>Revenue</th>
+                                 <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tya343</td>
+                                <td>Agra, Uttar Pradesh</td>
+                                <td>24-10-21 & 12:00 am</td>
+                                <td>deepanshu</td>
+                                <td>22</td>
+                                <td>$ 1, 124.00</td>
+                                <td><span class="active">Unblock</span></td>
+                                <td><span class="actionAll">
+                                        <!-- <a [routerLink]="['/customer-details']" class="eye"><i
+                                                class="fa fa-eye"></i></a> -->
+
+                                        <label class="Switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#Delete"class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tya343</td>
+                                <td>Agra</td>
+                                <td>24-10-21 & 12:00 am</td>
+                                <td>deepanshu</td>
+                                <td>22</td>
+                                <td>$ 1, 124.00</td>
+                                <td><span class="inactive">Block</span></td>
+                                <td><span class="actionAll">
+                                        <!-- <a [routerLink]="['/customer-details']" class="eye"><i
+                                                class="fa fa-eye"></i></a> -->
+
+                                        <label class="Switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#Delete" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="paginationAll">
+                <div class="paginationRight">
+                    <ul>
+                        <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+                        <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-left"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)" class="active">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-right"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ModalBox">
+      
+
+        <!-- <div id="TripsDeleteModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Decline">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Delete</h3>
+                            <p>Are you sure you want to Trips this Offer ?</p>
+                            <h4> 
+                                <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                                <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                            </h4>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div> 
+
+        <div id="BlockModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Decline">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Block</h3>
+                            <p>Are you sure you want to block this Banner ?</p>
+                            <h4> 
+                                <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                                <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                            </h4>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+        
+        <div id="UnblockModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Decline">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Unblock</h3>
+                            <p>Are you sure you want to Unblock this Banner ?</p>
+                            <h4> 
+                                <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                                <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                            </h4>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div> 
+         -->
+      
+
+        <div id="OfferAddModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Category">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Add Location</h3> 
+                          
+                            <div class="form-group">
+                                <label class="label">Enter Location Name</label>
+                                <input type="text" class="form-control formControl" placeholder="Enter Location Name">
+                            </div> 
+                          
+                            <div class="Button">
+                                <button type="button" class="btn">Add Location</button>
+                            </div>
+
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div> 
+
+        
+        <div id="Delete" class="modal fade in" role="dialog">
+            <div class="modal-dialog">   
+                <div class="modal-content"> 
+                    <div class="modal-body"> 
+                        <div class="Decline">
+                            <a href="javascript:void(0);" class="CloseModal" data-dismiss="modal">×</a>
+                            <h3>Delete</h3>
+                            <p>Are you sure you want to Delete this Customer ?</p>
+                            <h4> 
+                                <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                                <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                            </h4>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+        
+    </div>
+</section>

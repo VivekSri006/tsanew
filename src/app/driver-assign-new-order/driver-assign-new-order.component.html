@@ -1,0 +1,220 @@
+<section>
+  <app-sidenav></app-sidenav>
+  <app-header></app-header>
+  <div class="commonContent">
+    <h2 class="main">Driver Assign new order
+    </h2>
+
+
+
+    <div class="whiteBox">
+      <div class="assignDetails">
+        <form action="">
+          <div class="form-group">
+            <label for="" class="label">
+              Location
+            </label>
+            <input type="text" class="form-control formControl" placeholder=" Search Area">
+          </div>
+          <div class="form-group">
+            <label for="" class="label">
+              Order size range
+            </label>
+            <ngx-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider>
+          </div>
+          <div class="form-group">
+            <label for="" class="label">
+              Order Placed
+            </label>
+            <ul>
+              <li>
+                <div class="checkBox checkboxtable">
+                  <input type="checkbox">
+                  <label for=""></label>
+                  <span>Today</span>
+
+                </div>
+              </li>
+              <li>
+                <div class="checkBox checkboxtable">
+                  <input type="checkbox">
+                  <label for=""></label>
+                  <span>Yesterday</span>
+
+                </div>
+              </li>
+              <li>
+                <div class="checkBox checkboxtable">
+                  <input type="checkbox">
+                  <label for=""></label>
+                  <span>This Week</span>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="applyBtn SAVE ">
+            <a href="javascript:void(0)" class="btns">View Orders</a>
+        </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="whiteBox">
+      <div class="searchDet">
+        <form action="">
+            <div class="allFilter">
+                <div class="filterFlex">
+                    <div class="form-group">
+                        <label for="" class="label">Search</label>
+                        <input type="text" placeholder="Category Id" class="form-control formControl">
+                    </div>
+                    <div class="applyBtn">
+                        <a href="javascript:void(0)" class="btns">Apply</a>
+                    </div>
+                </div>
+                <div class="filterFlex2">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" class="btns">Assign To Driver</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="tableList">
+      <div class="table-responsive scrollbar2" id="style-4">
+          <table class="table force-overflow2" style="width: 100%;">
+              <thead>
+                  <tr>
+                      <th>
+                          <div class="checkBox checkboxtable">
+                              <input type="checkbox">
+                              <label for=""></label>
+
+                          </div>
+                      </th>
+                      <th>Sr No.</th>
+                      <th>Order Id</th>
+                      <th>Order Date/Time</th>
+                      <th>Drop location</th>
+                      <th>Item Qty </th>
+                      <th>Amount</th>
+                      <th>Payment Mode</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          <div class="checkBox checkboxtable">
+                              <input type="checkbox">
+                              <label for=""></label>
+
+                          </div>
+
+                      </td>
+                      <td>1</td>
+                      <td>812</td>
+                      <td>24-10-21 & 12:00 am</td>
+                      <td>India</td>
+                      <td>3</td>
+                      <td>2000</td>
+                      <td>Online</td>
+                      
+                      <td><span class="panding">Pending</span></td>
+                      <td><span class="actionAll">
+                              <a [routerLink]="['/customer-details']" class="eye"><i
+                                      class="fa fa-eye"></i></a>
+
+                             
+
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <div class="checkBox checkboxtable">
+                              <input type="checkbox">
+                              <label for=""></label>
+
+                          </div>
+
+                      </td>
+                      <td>2</td>
+                      <td>812</td>
+                      <td>24-10-21 & 12:00 am</td>
+                      <td>India</td>
+                      <td>3</td>
+                      <td>2000</td>
+                      <td>Online</td>
+                      
+                      <td><span class="panding">Pending</span></td>
+                      <td><span class="actionAll">
+                              <a [routerLink]="['/customer-details']" class="eye"><i
+                                      class="fa fa-eye"></i></a>
+
+                             
+
+                              
+                          </span>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <div class="checkBox checkboxtable">
+                            <input type="checkbox">
+                            <label for=""></label>
+
+                        </div>
+
+                    </td>
+                    <td>2</td>
+                    <td>812</td>
+                    <td>24-10-21 & 12:00 am</td>
+                    <td>India</td>
+                    <td>3</td>
+                    <td>2000</td>
+                    <td>Online</td>
+                    
+                    <td><span class="panding">Pending</span></td>
+                    <td><span class="actionAll">
+                            <a [routerLink]="['/customer-details']" class="eye"><i
+                                    class="fa fa-eye"></i></a>
+
+                           
+
+                            
+                        </span>
+                    </td>
+                </tr>
+
+              </tbody>
+          </table>
+      </div>
+
+  </div>
+    <div class="paginationAll">
+        <div class="paginationRight">
+            <ul>
+                <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+                <li><a href="javascript:void(0)" class="colorBlue"><i
+                            class="fa fa-angle-double-left"></i></a></li>
+                <li><a href="javascript:void(0)">1</a></li>
+                <li><a href="javascript:void(0)" class="active">2</a></li>
+                <li><a href="javascript:void(0)">3</a></li>
+                <li><a href="javascript:void(0)">4</a></li>
+                <li><a href="javascript:void(0)" class="colorBlue"><i
+                            class="fa fa-angle-double-right"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>

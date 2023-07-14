@@ -1,0 +1,459 @@
+
+
+
+.WrapperArea .WrapperBox{padding:35px;background-color:#efefef;min-height:calc(100vh - 60px)}
+.OrderDetails{box-shadow:0 1px 4px #ddd;padding:20px;margin:0;border-radius:10px;background-color:#fff;font-family:'Roboto';position: relative;}
+.OrderDetails+
+.OrderDetails{margin-top:20px}
+.OrderDetails h5 {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.OrderDetails article {
+    box-shadow: 0 1px 4px #ddd;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #fff;
+}
+.OrderDetails article figure {
+    width: 106px;
+    border: 3px solid #ff2604;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 0 auto;
+}
+.OrderDetails article figure span{position:absolute;top:10px;right:10px;background-color:#fff;padding:3px 5px;border-radius:5px;font-size:13px;color:#000}
+.OrderDetails article aside {
+    width: 50%;
+    overflow: initial;
+}
+
+.OrderDetails article aside p {
+    font-size: 14px;
+    display: flex;
+}
+.OrderDetails article aside p+p{margin:15px 0 0 0}
+.OrderDetails article aside p label {
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 180px;
+    position: relative;
+    margin: 0 15px 0 0;
+    padding: 0 10px 0 0;
+    color: #000;
+    font-family: 'Poppins';
+}
+.OrderDetails article aside p label:after{content:':';position:absolute;right:0;top:0}
+.OrderDetails article aside p span {
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #747474;
+    font-family: 'Poppins';
+}
+
+
+
+.SearchBox h2.main {
+   margin-bottom: 20px;
+}
+.OrderDetails .product article {
+box-shadow: none;
+border-radius: 0;
+margin-bottom: 20px;
+}
+.OrderDetails .product article.ProductArt {
+    border-bottom: 1px solid #f1f1f1;
+}
+.OrderDetails .product{
+    box-shadow: 0 1px 4px #ddd;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.OrderDetails .product h6{
+    font-size: 16px;
+    margin: 0 ;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.DeliveryAddress {
+    margin-top: 20px;
+}
+.OrderDetails .Name {
+    display: flex;
+    justify-content: space-between;
+}
+.OrderDetails .Name p{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #747474;
+    font-family: 'Poppins';
+}
+.OrderDetails p.Address{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #747474;
+    font-family: 'Poppins';
+    line-height: 37px;
+   
+}
+.OrderDetailsDelivery article{
+    display: block;
+}
+.Coupon {
+    padding: 20px;
+}
+.Coupon .applyBtn {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Coupon h5 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.applyBtn a.btns {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+
+
+.StaticBoxArea .panel-group{font-family:'Roboto';margin:0}
+.StaticBoxArea .panel-group .panel{border:1px solid #ddd;border-radius:0}
+.StaticBoxArea .panel-group .panel+.panel{margin:15px 0 0 0}
+.StaticBoxArea .panel-group .panel .panel-heading{cursor:pointer;background-color:#ddd;border-radius:0;padding:15px 55px 15px 15px;position:relative;display:flex;align-items:center;justify-content:space-between}
+.StaticBoxArea .panel-group .panel .panel-heading:after{content:'\f107';font-family:FontAwesome;color:#000;position:absolute;top:18px;right:20px;font-size:19px;font-weight:600;line-height:14px;transition:0.5s all ease-in-out}
+.StaticBoxArea .panel-group .panel .panel-heading[aria-expanded="true"]:after{transform:rotate(180deg)}
+.StaticBoxArea .panel-group .panel .panel-heading h4{
+    font-size: 17px;
+    color: #000;
+    font-family: 'Poppins';
+}
+.StaticBoxArea .panel-group .panel .panel-heading a{color:#000;font-size:14px}
+.StaticBoxArea .panel-group .panel .panel-body:before{content:none}
+.StaticBoxArea .panel-group .panel .panel-body p{
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Poppins';
+  
+}
+.StaticBoxArea .panel-group .panel .panel-body p+p{margin-top:15px}
+
+
+
+.commonContent .SAVE a.btns {
+    margin-top: 20px;
+    padding: 15px 20px;
+    width: 20%;
+}
+.commonContent .SAVE {
+    text-align: center;
+}
+.FilterArea.filterFlex{
+    display: block;
+}
+
+textarea.form-control {
+    height: 108px;
+    resize: none;
+}
+textarea.form-control:focus{
+    height: 108px;
+}
+.TextArea {
+    margin-top: 30px;
+   
+}
+.FilterArea .Searchbutton {
+    margin-top: 37px;
+    width: 40%;
+}
+.checkBox.checkboxtable input + label {
+    position: relative;
+    left: -25px;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    border: 1px solid var(--colorRed);
+    border-radius: 5px;
+    margin: 0;
+}
+.checkBox.checkboxtable input:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 11px;
+    border:  solid #ff2604;
+    border-width: 0 2px 2px 0;
+    transform: rotate(
+45deg);
+}
+.applyBtn.Addbtn{
+    display: flex;
+    align-items: center;
+}
+.applyBtn.Addbtn a{
+    margin-left: 10px;
+}
+.filterFlex2 {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+a.delete{
+    font-size: 16px;
+    color: var(--colorOrange);
+    margin-right: 8px;
+}
+a.delete{
+    margin-left: 4px;
+    margin-right: 0;
+}
+.Button button{
+    color: var(--colorWhite);
+    font-weight: 500;
+    background-image: linear-gradient(#3575ed,#fef3f1);
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.ModalBox h3 {
+    font-size: 20px;
+    color: var(--colorBlack);
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.ModalBox .CloseModal {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 800;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid #787878;
+    align-items: center;
+    justify-content: center;
+}
+.commonHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span.panding{
+    color:grey;
+}
+span.process{
+    color:blue;
+}
+
+.TableBtnPaid a {
+    color: var(--colorWhite);
+    font-weight: 500;
+    background-image: linear-gradient(#00a3f5,#e4d5d3);
+    border: none;
+    padding: 7px 24px;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    border-radius: 6px;
+}
+.filterFlex .form-control.formControl {
+    resize: none;
+}
+.modal-body{
+    padding: 30px;
+}
+
+
+.Download .AttachFile h3{
+    font-size: 23px;
+    font-family: 'Roboto';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Download .AttachFile input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.Download .AttachFile .FileMAIN{
+    position: relative;
+ 
+
+}
+.Download a{
+    font-weight: 500;
+    background: #FFF;
+    display: inline-block;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #b1b1b1;
+    color: #000;
+}
+.Download .AttachFile .FileMAIN span {
+    font-weight: 500;
+    background: #FFF;
+    display: inline-block;
+    padding: 15px 64px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #b1b1b1;
+    color: #000;
+}
+.Download i{
+    padding-right: 10px;
+}
+.Download {
+    margin-bottom: 30px;
+}
+.Download h3 {
+    font-size: 18px;
+    color: var(--colorBlack);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.Download p{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #747474;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+span.AssignArea{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #0072ed;
+    font-family: 'Poppins';
+    padding: 10px;
+    font-size: 14px;
+
+}
+.Coupon .applyBtn .btns{
+    width: 40%;
+}
+.assignDetails ul{ 
+       display: flex;
+    margin: 10px 0;
+}
+.assignDetails ul li{
+    padding-right: 60px;
+}
+.ngx-slider .ngx-slider-pointer {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    top: -14px;
+    background-color: #fe6a0b !important;
+    z-index: 3;
+    border-radius: 16px;
+}
+
+.ngx-slider .ngx-slider-selection {
+    z-index: 2;
+    background: #fe6a0b !important;
+    border-radius: 2px;
+}
+.ModalBox .Download .AttachFile .FileMAIN span {
+ width: 100%;
+}
+
+.OrderDetails .Ratings ul{
+    display:flex;
+    align-items: center;
+}
+.OrderDetails .Ratings ul li{
+    padding-right: 20px;
+}
+.OrderDetails .Ratings ul li i {
+    font-size: 38px;
+    color: #ff9800;
+}
+.OrderDetails .Ratings p{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #747474;
+    font-family: 'Poppins';
+}
+span.notificationNum {
+    position: absolute;
+    background: #fd8d0e;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    right: -11px;
+    top: -14px;
+    z-index: 9;
+    color: #fff;
+    border-radius: 50% 50% 50% 0;
+}
+.OrderDetails aside{
+    position: relative;
+}
+.Verificationimg figure {
+    width: 300px !important;
+    height: 300px;
+}
+.Verificationimg figure img {
+    width: 100%;
+}
+.Verificationimg p {
+    margin-top: 10px;
+    justify-content: end;
+}
+.btn:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.filterFlex input.form-control.formControl {
+    min-width: 225px;
+    text-transform: capitalize;
+}
+.filterFlex select.form-control.formControl {
+    text-transform: capitalize;
+}
+.ModalBox .modal-dialog .Decline{margin:0}
+.ModalBox .modal-dialog .Decline h3{font-family: 'Poppins';font-weight:700;font-size:22px;margin:0 0 5px;text-align:left}
+.ModalBox .modal-dialog .Decline p{font-size:16px;font-family: 'Poppins';color:#777;text-align:left}
+.ModalBox .modal-dialog .Decline h4{margin:15px 0 0 0;text-align:right;font-family: 'Poppins';}
+.ModalBox .modal-dialog .Decline h4 a{text-transform:capitalize;margin:0 0 0 30px;font-family: 'Poppins';font-size:17px;color:#fd8d0e;font-weight:400;-webkit-transition:0.5s all ease-in-out;transition:0.5s all ease-in-out}
+.ModalBox .modal-dialog .Decline h4 a:hover{color:#000}

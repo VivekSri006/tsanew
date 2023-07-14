@@ -1,0 +1,120 @@
+<section>
+    <app-sidenav></app-sidenav>
+    <app-header></app-header>
+    <div class="commonContent">
+        <h2 class="main">User Management
+        </h2>
+        <div class="whiteBox">
+            
+     <form action="">
+<div class="allFilter">
+    <div class="filterFlex">
+        <div class="form-group">
+            <label for="" class="label">Search</label>
+            <input type="text" placeholder="User Id" class="form-control formControl">
+        </div>
+        <div class="applyBtn">
+            <a href="javascript:void(0)" class="btns">Search</a>
+        </div>
+    </div>
+    <div class="filterFlex2">
+        <ul>
+            <li><a [routerLink]="['/add-new-customer']"  class="btns">Add New User
+            </a></li>
+        </ul>
+    </div>
+</div>
+     </form>
+            <!-- <div class="filterFlex2">
+                <ul>
+                    <li>
+                        <input type="radio" name="date">
+                        <label for="">Today</label>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="whiteBox">
+            <div class="tableList">
+                <div class="table-responsive scrollbar2" id="style-4">    
+                    <table class="table force-overflow2" style="width: 160%;">
+                        <thead>
+                            <tr>
+                                <th>User Id</th>
+                                <th>Name</th>
+                                <th>Number</th>
+                                <th>Email Id</th>
+                                <th>Location</th>
+                                <th>Uploaded On</th>
+                                <th>Uploaded By</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="colorRed">Tya343</a></td>
+                                <td>Akash</td>
+                                <td>8126362520</td>
+                                <td>akash@gmail.com</td>
+                                <td>India</td>
+                                <td>24-10-21</td>
+                                <td>Admin</td>
+                                <td><span class="active">Active</span></td>
+                                <td><span class="actionAll">
+                                    <a [routerLink]="['/customer-details']" class="eye"><i class="fa fa-eye"></i></a>
+                                    
+                                    <label class="Switch">
+                                          <input type="checkbox">
+                                          <span class="slider"></span>
+                                      </label>
+                                      
+                                      <a [routerLink]="['/edit-new-customer']" class="edit"><i class="fa fa-edit"></i></a>
+                                  </span>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td><a class="colorRed">Tya343</a></td>
+                                <td>Akash Mishra</td>
+                                <td>8126362520</td>
+                                <td>mishras@gmail.com</td>
+                                <td>India</td>
+                                <td>24-10-21</td>
+                                <td>Admin</td>
+                                <td><span class="inactive">Inactive</span></td>
+                                <td><span class="actionAll">
+                                    <a [routerLink]="['/customer-details']" class="eye"><i class="fa fa-eye"></i></a>
+                                    
+                                      <label class="Switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                        
+                                        <a [routerLink]="['/edit-new-customer']" class="edit"><i class="fa fa-edit"></i></a>
+                                    </span>
+                                </td>
+                            </tr>
+               
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="paginationAll">
+                <div class="paginationRight">
+                    <ul>
+                        <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+                        <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)" class="active">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-right"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</section>

@@ -1,0 +1,260 @@
+<section>
+  <app-sidenav></app-sidenav>
+  <app-header></app-header>
+  <div class="commonContent">
+    <h2 class="main">Customer Details
+    </h2>
+    <div class="commonTabs">
+      <ul class="nav nav-tabs ">
+        <li><a data-toggle="tab" class="active" href="#personalInfo">Personal Information
+          </a></li>
+        <li><a data-toggle="tab" href="#orderHistory">Order History
+          </a></li>
+        <li><a data-toggle="tab" href="#trasactionHistory">Trasaction History</a></li>
+      </ul>
+    </div>
+
+
+    <div class="whiteBox">
+      <div class="tab-content">
+        <div id="personalInfo" class="tab-pane fade show in active">
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="personalInfo">
+                <ul>
+                  <li><span class="heading">User Id</span><span class="answer colorRed">U-030</span></li>
+                  <li><span class="heading">User Name</span><span class="answer ">Deepanshu</span></li>
+                  <li><span class="heading">Email Id</span><span class="answer ">deepanshu@gmail.com</span></li>
+                  <li><span class="heading">Mobile Number</span><span class="answer ">8126362520</span></li>
+                  <li><span class="heading">Registration Date/Time</span><span class="answer ">04-01-22 / 04:23 p.m
+                    </span></li>
+                  <li><span class="heading">Location</span><span class="answer ">Meerut</span></li>
+                  <li><span class="heading">Status</span><span class="answer ">Active</span></li>
+                  <li><span class="heading">Total Orders</span><span class="answer ">016</span></li>
+                  <li><span class="heading">Uploaded By</span><span class="answer ">Admin</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="personalImg">
+                <div class="upperImg">
+                  <img src="assets/images/dummy.svg" alt="img">
+                </div>
+                <div class="status">
+                  <h2>Status</h2>
+                  <label class="Switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                  <h2 style="text-align: right;">Unblock</h2>
+                </div>
+                <textarea class="form-control formControl" placeholder="Please Enter Your Reason to Block"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="orderHistory" class="tab-pane fade">
+          <div class="searchDet">
+            <form action="">
+               <div class="filterFlex">
+                   <div class="form-group">
+                       <label for="" class="label">Search</label>
+                       <input type="text" placeholder="Order Id" class="form-control formControl">
+                   </div>
+                   <div class="applyBtn">
+                       <a href="javascript:void(0)" class="btns">Search</a>
+                   </div>
+               </div>
+            </form>
+          </div>
+          <div class="tableList">
+            <div class="table-responsive scrollbar2" id="style-4">    
+                <table class="table force-overflow2" style="min-width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Sr No.</th>
+                            <th>Order Id</th>
+                            <th>Order Date/Time</th>
+                            <th>Shipping location</th>
+                            <th>Item Qty</th>
+                            <th>Amount</th>
+                            <th>Payment Mode</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>1</td>
+                            <td><a class="colorRed">Tya343</a></td>
+                            <td>24-10-21/02:45 p.m</td>
+                            <td>Noida</td>
+                            <td>02</td>
+                            <td>$ 120</td>
+                            <td>Cash</td>
+                            <td><span class="Completed">Completed</span></td>
+             
+                            <td><span class="actionAll">
+                              <a  class="eye"><i class="fa fa-eye"></i></a>
+                     
+                                </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                            <td><a class="colorRed">Tya343</a></td>
+                            <td>24-10-21/02:45 p.m</td>
+                            <td>Noida</td>
+                            <td>02</td>
+                            <td>$ 120</td>
+                            <td>Cash</td>
+                            <td><span class="Active">Active</span></td>
+             
+                            <td><span class="actionAll">
+                                <a  class="eye"><i class="fa fa-eye"></i></a>
+                     
+                                </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                            <td><a class="colorRed">Tya343</a></td>
+                            <td>24-10-21/02:45 p.m</td>
+                            <td>Noida</td>
+                            <td>02</td>
+                            <td>$ 120</td>
+                            <td>Cash</td>
+                            <td><span class="Upcoming">Upcoming</span></td>
+             
+                            <td><span class="actionAll">
+                                <a class="eye"><i class="fa fa-eye"></i></a>
+                     
+                                </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                            <td><a class="colorRed">Tya343</a></td>
+                            <td>24-10-21/02:45 p.m</td>
+                            <td>Noida</td>
+                            <td>02</td>
+                            <td>$ 120</td>
+                            <td>Cash</td>
+                            <td><span class="Pending">Pending</span></td>
+             
+                            <td><span class="actionAll">
+                                <a  class="eye"><i class="fa fa-eye"></i></a>
+                     
+                                </span>
+                          </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="paginationAll">
+            <div class="paginationRight">
+                <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+                    <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)" class="active">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div id="trasactionHistory" class="tab-pane fade">
+          <div class="searchDet">
+            <form action="">
+               <div class="filterFlex">
+                   <div class="form-group">
+                       <label for="" class="label">Search</label>
+                       <input type="text" placeholder="Transaction Id" class="form-control formControl">
+                   </div>
+                   <div class="applyBtn">
+                       <a href="javascript:void(0)" class="btns">Search</a>
+                   </div>
+               </div>
+            </form>
+          </div>
+          <div class="tableList">
+            <div class="table-responsive scrollbar2" id="style-4">    
+                <table class="table force-overflow2" style="min-width: 100%;">
+                    <thead>
+                        <tr>
+                          <th> <div class="checkBox checkboxtable">
+                            <input type="checkbox">
+                            <label for=""></label>
+
+                        </div></th>
+                            <th>Sr No.</th>
+                            <th>Transaction Id</th>
+                            <th>Transaction Date/Time</th>
+                            <th>Amount</th>
+                            <th>Order Id</th>
+                            <th>Payment Mode</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td> <div class="checkBox checkboxtable">
+                            <input type="checkbox">
+                            <label for=""></label>
+
+                        </div></td>
+                          <td>1</td>
+                            <td><a class="colorRed">Tya343</a></td>
+                            <td>24-10-21/02:45 p.m</td>
+                            <td>$ 120</td>
+                            <td><a class="colorRed">343</a></td>
+                          
+                            <td>Cash</td>
+                            <td><span class="Completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                          <td> <div class="checkBox checkboxtable">
+                            <input type="checkbox">
+                            <label for=""></label>
+
+                        </div></td>
+                          <td>2</td>
+                            <td><a class="colorRed">Tya343</a></td>
+                            <td>24-10-21/02:45 p.m</td>
+                            <td>$ 120</td>
+                            <td><a class="colorRed">343</a></td>
+                          
+                            <td>Cash</td>
+                            <td><span class="Pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="paginationAll">
+            <div class="paginationRight">
+                <ul>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+                    <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)" class="active">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)" class="colorBlue"><i class="fa fa-angle-double-right"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
